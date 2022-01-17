@@ -1,0 +1,5 @@
+POST http://localhost:8080/checker/with
+Content-Type: application/json
+{
+  "url": "123"
+}
