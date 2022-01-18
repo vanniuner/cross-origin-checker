@@ -17,8 +17,6 @@ UrlServer         -> CorsBrowser: response
 CorsBrowser       -> CorsBrowser: diff url information with response
 
 #+END_SRC
-
-#+RESULTS:
 [[file:image/time.png]]
 
 * Check point
