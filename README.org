@@ -19,7 +19,7 @@ CorsBrowser       -> CorsBrowser: diff url information with response
 #+END_SRC
 
 #+RESULTS:
-[[file:./image/time.png]]
+[[file:image/time.png]]
 
 * Check point
 | The check point                  |   |
