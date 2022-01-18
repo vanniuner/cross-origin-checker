@@ -1,1 +1,30 @@
-an util for check cors request
+#+title: Corschecker ReadMe
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://7465-test-i1bhx-1301855613.tcb.qcloud.la/org-roam.css"/>
+#+OPTIONS: ^:nil
+#+OPTIONS: prop:t
+
+* About
+ - It is a tool which used to detect a http request is a [[https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS][CORS]] request or not.
+[[file:image/cors_principle.png]]
+* The timing chart
+#+BEGIN_SRC plantuml :file ./image/time.png
+CorsBrowser       -> CorsCheckerServer : Query http information
+CorsCheckerServer -> UrlServer : HttpClient query for all information
+UrlServer         -> CorsCheckerServer : All url information
+CorsCheckerServer -> CorsBrowser: All url information
+CorsBrowser       -> UrlServer: reqest
+UrlServer         -> CorsBrowser: response
+CorsBrowser       -> CorsBrowser: diff url information with response
+
+#+END_SRC
+
+#+RESULTS:
+[[file:./image/time.png]]
+
+* Check point
+| The check point                  |   |
+| Access-Control-Allow-Headers     |   |
+| Access-Control-Expose-Headers    |   |
+| Access-Control-Allow-Credentials |   |
+| Access-Control-Allow-Methods     |   |
+| Access-Control-Allow-Origin      |   |
