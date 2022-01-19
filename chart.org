@@ -1,0 +1,14 @@
+
+#+BEGIN_SRC plantuml :file ./image/time.png
+CorsBrowser       -> CorsCheckerServer  : http check request
+CorsCheckerServer -> UrlServer          : option http request
+UrlServer         -> CorsCheckerServer  : response header
+CorsCheckerServer -> CorsCheckerServer  : analyze check point
+CorsCheckerServer -> CorsBrowser        : analyze result request
+CorsBrowser       -> UrlServer          : request with the check point\ni.e add request header, set credentials
+UrlServer         -> CorsBrowser        : response\n i.e get the response data, access the response header
+CorsBrowser       -> CorsBrowser        : show cors result
+#+END_SRC
+
+#+RESULTS:
+[[file:./image/time.png]]
