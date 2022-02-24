@@ -11,5 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public abstract class CorsError {
 
-    String message;
+    public String message;
+
 }

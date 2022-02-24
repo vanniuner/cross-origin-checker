@@ -44,7 +44,6 @@ public class LocalCrosChecker {
                     result.addAll(Optional.ofNullable(item).orElse(new ArrayList<>()));
                     return result;
                 });
-
         crosCheckerResult.setErrorList(errorList);
         crosCheckerResult.setCrosStatus(errorList.size() > 0 ? true : false);
         return crosCheckerResult;

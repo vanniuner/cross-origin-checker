@@ -14,3 +14,4 @@ public class Empty {
     public static final String STR = "";
 
 }
+

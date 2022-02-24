@@ -2,6 +2,7 @@ package com.cors.checker.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.cors.checker.context.WannaRequestThd;
 import com.cors.checker.qo.WanaRequest;
 import com.cors.checker.service.LocalCrosChecker;
 import com.cors.checker.vo.CrosCheckerResult;
@@ -31,7 +32,9 @@ public class LocalCheckerController {
 
     @PostMapping("execute")
     public CrosCheckerResult execute(@RequestBody WanaRequest wanaRequest) {
+        WannaRequestThd.WANA_REQUEST_THD.set(wanaRequest);
         CrosCheckerResult crosCheckerResult = localCrosChecker.check(wanaRequest);
+        WannaRequestThd.WANA_REQUEST_THD.remove();
         return crosCheckerResult;
     }
 

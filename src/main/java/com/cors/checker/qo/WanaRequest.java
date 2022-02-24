@@ -1,6 +1,11 @@
 package com.cors.checker.qo;
 
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.stream.Collectors;
+
+import com.cors.checker.enums.Empty;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,5 +32,10 @@ public class WanaRequest {
     // request body
     String requestBody;
 
-
+    public String getHeader(String headerName) {
+        Map<String, String> headerMap = headerList.stream().collect(
+            Collectors.toMap(head -> head.getName(), head -> head.getValue(), (head1, head2) -> head1, TreeMap::new));
+        return headerMap.computeIfAbsent(headerName, key -> Empty.STR);
+    }
+    
 }

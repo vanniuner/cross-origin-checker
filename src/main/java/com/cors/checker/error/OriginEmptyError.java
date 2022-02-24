@@ -2,6 +2,7 @@ package com.cors.checker.error;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -15,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 public class OriginEmptyError extends CorsError {
 
     public OriginEmptyError() {
-        message = "Origin header is null.";
+        super.message = "Origin header is null.";
     }
 
 }
