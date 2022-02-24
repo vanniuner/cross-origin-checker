@@ -7,6 +7,13 @@
  - It is a tool which used to detect a http request is a [[https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS][CORS]] request or not.
 [[file:image/cors_principle.png]]
 
+* Usage
+- run the checker-server
+  #+begin_src shell
+  sh run.sh
+  #+end_src
+- test your request
+  [[./cors.http][restclient http]]
 * The timing chart
 [[file:image/time.png]]
 

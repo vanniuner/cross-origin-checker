@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-01-20 Thu 13:27 -->
+<!-- 2022-02-24 Thu 17:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Corschecker ReadMe</title>
@@ -202,42 +202,66 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgfdd7f4b">1. About</a></li>
-<li><a href="#org7a84b54">2. The timing chart</a></li>
-<li><a href="#org9e3c9c7">3. Check point</a></li>
-<li><a href="#org9dea037">4. todo list</a></li>
+<li><a href="#orgb1f1794">1. About</a></li>
+<li><a href="#org25ecab7">2. Usage</a></li>
+<li><a href="#org4d7392f">3. The timing chart</a></li>
+<li><a href="#org30fde7c">4. Check point</a></li>
+<li><a href="#orgfd779d7">5. todo list</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgfdd7f4b" class="outline-2">
-<h2 id="orgfdd7f4b"><span class="section-number-2">1.</span> About</h2>
+<div id="outline-container-orgb1f1794" class="outline-2">
+<h2 id="orgb1f1794"><span class="section-number-2">1.</span> About</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>It is a tool which used to detect a http request is a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a> request or not.</li>
 </ul>
 
-<div id="org569d157" class="figure">
+<div id="orge2a7371" class="figure">
 <p><img src="image/cors_principle.png" alt="cors_principle.png" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org7a84b54" class="outline-2">
-<h2 id="org7a84b54"><span class="section-number-2">2.</span> The timing chart</h2>
+<div id="outline-container-org25ecab7" class="outline-2">
+<h2 id="org25ecab7"><span class="section-number-2">2.</span> Usage</h2>
 <div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><p>
+run the checker-server
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">  sh run.sh
+</pre>
+</div></li>
+<li>test your request</li>
+</ul>
 
-<div id="orgae08317" class="figure">
+<p>
+<a href="./cors.http">restclient http</a>
+</p>
+<pre class="example">
+  restclient
+
+</pre>
+</div>
+</div>
+<div id="outline-container-org4d7392f" class="outline-2">
+<h2 id="org4d7392f"><span class="section-number-2">3.</span> The timing chart</h2>
+<div class="outline-text-2" id="text-3">
+
+<div id="orgeb50673" class="figure">
 <p><img src="image/time.png" alt="time.png" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9e3c9c7" class="outline-2">
-<h2 id="org9e3c9c7"><span class="section-number-2">3.</span> Check point</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org30fde7c" class="outline-2">
+<h2 id="org30fde7c"><span class="section-number-2">4.</span> Check point</h2>
+<div class="outline-text-2" id="text-4">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -322,9 +346,9 @@
 </div>
 </div>
 
-<div id="outline-container-org9dea037" class="outline-2">
-<h2 id="org9dea037"><span class="section-number-2">4.</span> todo list</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-orgfd779d7" class="outline-2">
+<h2 id="orgfd779d7"><span class="section-number-2">5.</span> todo list</h2>
+<div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>check a request is a simple request or not</li>
 <li>httpClient implement</li>
@@ -334,7 +358,7 @@
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Goldkinn</p>
-<p class="date">Created: 2022-01-20 Thu 13:27</p>
+<p class="date">Created: 2022-02-24 Thu 17:02</p>
 </div>
 </body>
 </html>
