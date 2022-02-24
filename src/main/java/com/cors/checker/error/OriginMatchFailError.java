@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * orgion 与 url 校验失败
+ * orgion and url do not match
  * @author author
  * @time 2022-02-24 12:36:11
  **/
@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @EqualsAndHashCode(callSuper = true)
 public class OriginMatchFailError extends CorsError {
 
-    private static final transient String MESSAGE = "Origin head: %s and request url %s domain do not matchs.";
+    private static final transient String MESSAGE = "Origin head: %s and request url %s domain do not match.";
 
     public OriginMatchFailError() {
         WanaRequest wanaRequest = WannaRequestThd.WANA_REQUEST_THD.get();

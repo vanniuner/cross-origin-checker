@@ -37,5 +37,11 @@ public class WanaRequest {
             Collectors.toMap(head -> head.getName(), head -> head.getValue(), (head1, head2) -> head1, TreeMap::new));
         return headerMap.computeIfAbsent(headerName, key -> Empty.STR);
     }
+
+    public String getCookie(String cookieName) {
+        Map<String, String> cookieMap = cookieList.stream().collect(
+            Collectors.toMap(cookie -> cookie.getName(), cookie -> cookie.getValue(), (cookie1, cookie2) -> cookie1, TreeMap::new));
+        return cookieMap.computeIfAbsent(cookieName, key -> Empty.STR);
+    }
     
 }
