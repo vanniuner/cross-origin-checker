@@ -1,6 +1,7 @@
 
 #+BEGIN_SRC plantuml :file ./image/time.png
 CorsBrowser       -> CorsCheckerServer  : http check request
+CorsCheckerServer -> CorsCheckerServer  : simple request or Not
 CorsCheckerServer -> UrlServer          : option http request
 UrlServer         -> CorsCheckerServer  : response header
 CorsCheckerServer -> CorsCheckerServer  : analyze check point
@@ -11,4 +12,3 @@ CorsBrowser       -> CorsBrowser        : show cors result
 #+END_SRC
 
 #+RESULTS:
-[[file:./image/time.png]]

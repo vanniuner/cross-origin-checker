@@ -1,4 +1,4 @@
-package com.neo.cors.checker;
+package com.cors.checker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

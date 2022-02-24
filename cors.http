@@ -1,5 +1,6 @@
-POST http://localhost:8080/checker/with
+POST http://localhost:8080/local/checker/execute
 Content-Type: application/json
 {
-  "url": "123"
+  "url": "http://www.baidu.com/abc",
+  "headerList": []
 }

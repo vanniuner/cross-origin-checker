@@ -6,14 +6,19 @@
 * About
  - It is a tool which used to detect a http request is a [[https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS][CORS]] request or not.
 [[file:image/cors_principle.png]]
+
 * The timing chart
 [[file:image/time.png]]
 
 * Check point
-| direction | The check point                  | cors request                            | unsafe request | control by preflighted request | affect                                     |
-| response  | Access-Control-Allow-Credentials | different with withCredentials          | true           | no                             | browser will block access to the response  |
-| response  | Access-Control-Allow-Origin      | different with request origin           | wildcard       | yes                            | browser will block data request            |
-| response  | Access-Control-Allow-Methods     | out of request headers                  | -              | yes                            | browser will block data request            |
-| response  | Access-Control-Allow-Headers     | wildcard                                | wildcard       | yes                            | browser will block access to the response  |
-| response  | Access-Control-Expose-Headers    | out of response headers                 | wildcard       | yes                            | JavaScript can not access response headers |
-| response  | Set-Cookie                       | Access-Control-Allow-Origin is wildcard | -              | yes                            | would not set a cookie                     |
+| direction | The check point                  | cors request                               | unsafe request | control by preflighted request | affect                                     |
+| response  | Access-Control-Allow-Credentials | different with withCredentials             | true           | no                             | browser will block access to the response  |
+| response  | Access-Control-Allow-Origin      | different with request origin              | wildcard       | yes                            | browser will block data request            |
+| response  | Access-Control-Allow-Methods     | origin confilct and out of GET、HEAD、POST | -              | yes                            | browser will block data request            |
+| response  | Access-Control-Allow-Headers     | wildcard                                   | wildcard       | yes                            | browser will block access to the response  |
+| response  | Access-Control-Expose-Headers    | out of response headers                    | wildcard       | yes                            | JavaScript can not access response headers |
+| response  | Set-Cookie                       | Access-Control-Allow-Origin is wildcard    | -              | yes                            | would not set a cookie                     |
+
+* todo list
+- check a request is a simple request or not
+- httpClient implement
