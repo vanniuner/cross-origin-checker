@@ -9,7 +9,7 @@ import com.cross.origin.checker.qo.WanaRequest;
  * @author author
  * @time 2022-02-24 13:05:09
  **/
-public interface CrosChecker {
+public interface CrossOriginChecker {
 
     Integer getOrder();
 

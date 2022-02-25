@@ -7,4 +7,4 @@ if [ -n $JREBEL_HOME ]; then
     echo "SETTING JREBEL=$JREBEL_HOME/lib/libjrebel64.dylib"
 fi
 java $JAVA_OPTS \
--jar target/cors-checker-0.0.1-SNAPSHOT.jar
+-jar target/cross-origin-checker-0.0.1-SNAPSHOT.jar

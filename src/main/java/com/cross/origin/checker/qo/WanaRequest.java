@@ -32,6 +32,9 @@ public class WanaRequest {
     // request body
     String requestBody;
 
+    // request method
+    String method;
+
     public String getHeader(String headerName) {
         Map<String, String> headerMap = headerList.stream().collect(
             Collectors.toMap(head -> head.getName(), head -> head.getValue(), (head1, head2) -> head1, TreeMap::new));

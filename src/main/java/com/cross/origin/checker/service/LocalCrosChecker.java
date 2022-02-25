@@ -34,9 +34,9 @@ public class LocalCrosChecker {
      */
     public CrossCheckerResult check(WanaRequest wanaRequest) {
         CrossCheckerResult crosCheckerResult = new CrossCheckerResult();
-        Map<String, CrosChecker> checkerMap = applicationContext.getBeansOfType(CrosChecker.class);
+        Map<String, CrossOriginChecker> checkerMap = applicationContext.getBeansOfType(CrossOriginChecker.class);
         List<CrossOriginError> errorList = checkerMap.values().stream()
-                .sorted(Comparator.comparing(CrosChecker::getOrder)).map(checker -> {
+                .sorted(Comparator.comparing(CrossOriginChecker::getOrder)).map(checker -> {
                     log.info("[loading local checker]: {}", checker.getClass().getSimpleName());
                     return checker.check(wanaRequest);
                 }).reduce(new ArrayList<>(), (result, item) -> {
@@ -44,7 +44,7 @@ public class LocalCrosChecker {
                     return result;
                 });
         crosCheckerResult.setErrorList(errorList);
-        crosCheckerResult.setCrossStatus(errorList.size() > 0 ? true : false);
+        crosCheckerResult.setCrossOriginStatus(errorList.size() > 0 ? true : false);
         return crosCheckerResult;
     }
     

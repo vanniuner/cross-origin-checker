@@ -18,4 +18,6 @@ public class CrossCheckerResult {
     List<CrossOriginError> errorList;
 
     boolean crossOriginStatus;
+
+    boolean simpleRequest;
 }
