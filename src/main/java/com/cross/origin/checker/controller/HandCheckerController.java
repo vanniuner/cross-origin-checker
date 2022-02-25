@@ -1,7 +1,7 @@
 package com.cross.origin.checker.controller;
 
 import com.cross.origin.checker.qo.WanaRequest;
-import com.cross.origin.checker.vo.CrosCheckerResult;
+import com.cross.origin.checker.vo.CrossCheckerResult;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 public class HandCheckerController {
 
     @PostMapping("execute")
-    public CrosCheckerResult execute(@RequestBody WanaRequest wanaRequest) {
+    public CrossCheckerResult execute(@RequestBody WanaRequest wanaRequest) {
         return null;
     }
 

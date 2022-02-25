@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import com.cross.origin.checker.error.CorsError;
+import com.cross.origin.checker.error.CrossOriginError;
 import com.cross.origin.checker.qo.WanaRequest;
-import com.cross.origin.checker.vo.CrosCheckerResult;
+import com.cross.origin.checker.vo.CrossCheckerResult;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -32,10 +32,10 @@ public class LocalCrosChecker {
     /**
      * local checker for CrosChecker list
      */
-    public CrosCheckerResult check(WanaRequest wanaRequest) {
-        CrosCheckerResult crosCheckerResult = new CrosCheckerResult();
+    public CrossCheckerResult check(WanaRequest wanaRequest) {
+        CrossCheckerResult crosCheckerResult = new CrossCheckerResult();
         Map<String, CrosChecker> checkerMap = applicationContext.getBeansOfType(CrosChecker.class);
-        List<CorsError> errorList = checkerMap.values().stream()
+        List<CrossOriginError> errorList = checkerMap.values().stream()
                 .sorted(Comparator.comparing(CrosChecker::getOrder)).map(checker -> {
                     log.info("[loading local checker]: {}", checker.getClass().getSimpleName());
                     return checker.check(wanaRequest);
@@ -44,7 +44,7 @@ public class LocalCrosChecker {
                     return result;
                 });
         crosCheckerResult.setErrorList(errorList);
-        crosCheckerResult.setCrosStatus(errorList.size() > 0 ? true : false);
+        crosCheckerResult.setCrossStatus(errorList.size() > 0 ? true : false);
         return crosCheckerResult;
     }
     

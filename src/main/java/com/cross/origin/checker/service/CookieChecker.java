@@ -2,7 +2,7 @@ package com.cross.origin.checker.service;
 
 import java.util.List;
 
-import com.cross.origin.checker.error.CorsError;
+import com.cross.origin.checker.error.CrossOriginError;
 import com.cross.origin.checker.qo.WanaRequest;
 
 import org.springframework.stereotype.Service;
@@ -28,7 +28,7 @@ public class CookieChecker implements CrosChecker {
     }
 
     @Override
-    public List<CorsError> check(WanaRequest wanaRequest) {
+    public List<CrossOriginError> check(WanaRequest wanaRequest) {
         // TODO Auto-generated method stub
         return null;
     }

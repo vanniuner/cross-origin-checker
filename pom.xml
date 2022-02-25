@@ -8,8 +8,8 @@
 		<version>2.5.8</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.neo</groupId>
-	<artifactId>cors-checker</artifactId>
+	<groupId>com.cross</groupId>
+	<artifactId>cross-origin-checker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>

@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @SuppressWarnings({ "unused" })
 @EqualsAndHashCode(callSuper = true)
-public class OriginMatchFailError extends CorsError {
+public class OriginMatchFailError extends CrossOriginError {
 
     private static final transient String MESSAGE = "Origin head: %s and request url %s domain do not match.";
 

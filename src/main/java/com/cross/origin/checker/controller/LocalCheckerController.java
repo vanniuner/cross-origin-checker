@@ -3,7 +3,7 @@ package com.cross.origin.checker.controller;
 import com.cross.origin.checker.context.WannaRequestThd;
 import com.cross.origin.checker.qo.WanaRequest;
 import com.cross.origin.checker.service.LocalCrosChecker;
-import com.cross.origin.checker.vo.CrosCheckerResult;
+import com.cross.origin.checker.vo.CrossCheckerResult;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,9 +29,9 @@ public class LocalCheckerController {
     LocalCrosChecker localCrosChecker;
 
     @PostMapping("execute")
-    public CrosCheckerResult execute(@RequestBody WanaRequest wanaRequest) {
+    public CrossCheckerResult execute(@RequestBody WanaRequest wanaRequest) {
         WannaRequestThd.WANA_REQUEST_THD.set(wanaRequest);
-        CrosCheckerResult crosCheckerResult = localCrosChecker.check(wanaRequest);
+        CrossCheckerResult crosCheckerResult = localCrosChecker.check(wanaRequest);
         WannaRequestThd.WANA_REQUEST_THD.remove();
         return crosCheckerResult;
     }

@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @SuppressWarnings({ "unused" })
 @EqualsAndHashCode(callSuper = true)
-public class OriginEmptyError extends CorsError {
+public class OriginEmptyError extends CrossOriginError {
 
     public OriginEmptyError() {
         super.message = "Origin header is null.";

@@ -2,7 +2,7 @@ package com.cross.origin.checker.service;
 
 import java.util.List;
 
-import com.cross.origin.checker.error.CorsError;
+import com.cross.origin.checker.error.CrossOriginError;
 import com.cross.origin.checker.qo.WanaRequest;
 
 /**
@@ -13,6 +13,6 @@ public interface CrosChecker {
 
     Integer getOrder();
 
-    List<CorsError> check(WanaRequest wanaRequest);
+    List<CrossOriginError> check(WanaRequest wanaRequest);
 
 }

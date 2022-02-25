@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
  **/
 @Data
 @NoArgsConstructor
-public abstract class CorsError {
+public abstract class CrossOriginError {
 
     public String message;
 

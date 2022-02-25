@@ -2,7 +2,7 @@ package com.cross.origin.checker.vo;
 
 import java.util.List;
 
-import com.cross.origin.checker.error.CorsError;
+import com.cross.origin.checker.error.CrossOriginError;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,9 +13,9 @@ import lombok.NoArgsConstructor;
  **/
 @Data
 @NoArgsConstructor
-public class CrosCheckerResult {
+public class CrossCheckerResult {
 
-    List<CorsError> errorList;
+    List<CrossOriginError> errorList;
 
-    boolean crosStatus;
+    boolean crossOriginStatus;
 }
