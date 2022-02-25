@@ -1,4 +1,4 @@
-package com.cors.checker.enums;
+package com.cross.origin.checker.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

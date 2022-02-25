@@ -1,7 +1,7 @@
-package com.cors.checker.controller;
+package com.cross.origin.checker.controller;
 
-import com.cors.checker.qo.WanaRequest;
-import com.cors.checker.vo.CrosCheckerResult;
+import com.cross.origin.checker.qo.WanaRequest;
+import com.cross.origin.checker.vo.CrosCheckerResult;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

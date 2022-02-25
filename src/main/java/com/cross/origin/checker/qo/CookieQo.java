@@ -1,8 +1,7 @@
-package com.cors.checker.qo;
+package com.cross.origin.checker.qo;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author author

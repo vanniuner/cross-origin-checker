@@ -1,8 +1,8 @@
-package com.cors.checker.vo;
+package com.cross.origin.checker.vo;
 
 import java.util.List;
 
-import com.cors.checker.error.CorsError;
+import com.cross.origin.checker.error.CorsError;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

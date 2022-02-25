@@ -1,9 +1,9 @@
-package com.cors.checker.service;
+package com.cross.origin.checker.service;
 
 import java.util.List;
 
-import com.cors.checker.error.CorsError;
-import com.cors.checker.qo.WanaRequest;
+import com.cross.origin.checker.error.CorsError;
+import com.cross.origin.checker.qo.WanaRequest;
 
 import org.springframework.stereotype.Service;
 

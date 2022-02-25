@@ -1,4 +1,4 @@
-package com.cors.checker.qo;
+package com.cross.origin.checker.qo;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

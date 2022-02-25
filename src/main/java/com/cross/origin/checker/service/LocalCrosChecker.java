@@ -1,15 +1,14 @@
-package com.cors.checker.service;
+package com.cross.origin.checker.service;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import com.cors.checker.error.CorsError;
-import com.cors.checker.qo.WanaRequest;
-import com.cors.checker.vo.CrosCheckerResult;
+import com.cross.origin.checker.error.CorsError;
+import com.cross.origin.checker.qo.WanaRequest;
+import com.cross.origin.checker.vo.CrosCheckerResult;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;

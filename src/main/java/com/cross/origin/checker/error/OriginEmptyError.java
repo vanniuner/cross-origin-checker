@@ -1,4 +1,4 @@
-package com.cors.checker.error;
+package com.cross.origin.checker.error;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

@@ -1,6 +1,6 @@
-package com.cors.checker.context;
+package com.cross.origin.checker.context;
 
-import com.cors.checker.qo.WanaRequest;
+import com.cross.origin.checker.qo.WanaRequest;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

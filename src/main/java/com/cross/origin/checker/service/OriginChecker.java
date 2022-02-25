@@ -1,17 +1,14 @@
-package com.cors.checker.service;
+package com.cross.origin.checker.service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.stream.Collectors;
 
-import com.cors.checker.enums.Empty;
-import com.cors.checker.enums.SpecialHeader;
-import com.cors.checker.error.CorsError;
-import com.cors.checker.error.OriginEmptyError;
-import com.cors.checker.error.OriginMatchFailError;
-import com.cors.checker.qo.WanaRequest;
+import com.cross.origin.checker.enums.Empty;
+import com.cross.origin.checker.enums.SpecialHeader;
+import com.cross.origin.checker.error.CorsError;
+import com.cross.origin.checker.error.OriginEmptyError;
+import com.cross.origin.checker.error.OriginMatchFailError;
+import com.cross.origin.checker.qo.WanaRequest;
 
 import org.springframework.stereotype.Service;
 

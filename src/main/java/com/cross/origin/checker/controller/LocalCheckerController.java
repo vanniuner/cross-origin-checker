@@ -1,11 +1,9 @@
-package com.cors.checker.controller;
+package com.cross.origin.checker.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.cors.checker.context.WannaRequestThd;
-import com.cors.checker.qo.WanaRequest;
-import com.cors.checker.service.LocalCrosChecker;
-import com.cors.checker.vo.CrosCheckerResult;
+import com.cross.origin.checker.context.WannaRequestThd;
+import com.cross.origin.checker.qo.WanaRequest;
+import com.cross.origin.checker.service.LocalCrosChecker;
+import com.cross.origin.checker.vo.CrosCheckerResult;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

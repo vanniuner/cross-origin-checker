@@ -1,12 +1,11 @@
-package com.cors.checker.error;
+package com.cross.origin.checker.error;
 
-import com.cors.checker.context.WannaRequestThd;
-import com.cors.checker.enums.SpecialHeader;
-import com.cors.checker.qo.WanaRequest;
+import com.cross.origin.checker.context.WannaRequestThd;
+import com.cross.origin.checker.enums.SpecialHeader;
+import com.cross.origin.checker.qo.WanaRequest;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 /**

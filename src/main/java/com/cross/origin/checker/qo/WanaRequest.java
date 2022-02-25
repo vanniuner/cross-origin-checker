@@ -1,11 +1,11 @@
-package com.cors.checker.qo;
+package com.cross.origin.checker.qo;
 
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
-import com.cors.checker.enums.Empty;
+import com.cross.origin.checker.enums.Empty;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
